@@ -60,7 +60,7 @@ class RatingReport(BaseReport):
 class PriceReport(BaseReport):
     """Отчет по средней цене товаров по брендам."""
     def generate(self, products):
-        print("products:", products)
+
         # Создаем словарь и сохраняем ключ: рейтинг товара, значение: цена
         prices = defaultdict(list)
         for product in products:

@@ -113,11 +113,11 @@ class Parser:
 
         products = self.read_files(terminal_args.files)
 
-        parser_logger.debug("Получено products: %d", len(products))
         if not products:
             parser_logger.error(f"Не передано аргументов")
             return
 
+        parser_logger.debug("Получено products: %d", len(products))
         # передаем ключ названия отчета из парсинга терминала
         report = self.reports[terminal_args.report]
 
