@@ -25,7 +25,7 @@ def test_parser_read_csv(sample_text, sample_parser):
     """
     try:
         with tempfile.NamedTemporaryFile(
-                mode="w", dir="tests/files", suffix=".csv", delete=False
+                mode="w", dir="tests", suffix=".csv", delete=False
         ) as fp:
             fp.write(sample_text)
             test_file = fp.name
